@@ -1,0 +1,185 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+.page {
+  color: #ccd6f6;
+  font-family: Calibri, Inter, sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #0a192f;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Top navigation */
+.topnav {
+  overflow: hidden;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.topnav a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+  color: #ccd6f6;
+  font-size: 0.875em;
+  transition: 0.5s;
+  font-family: monospace;
+}
+
+.topnav a:hover {
+  color: #64ffda;
+}
+
+.topnav a.active {
+  color: #64ffda;
+  border: 1px solid #64ffda;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.topnav a.active:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+/* Side navigation */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 50px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav .icon {
+  width: 20px;
+  height: 20px;
+  color: #8892b0;
+  transition: 0.5s;
+}
+
+.sidenav .icon:hover {
+  color: #64ffda;
+}
+
+/* Main content */
+.main {
+  margin: 30px 50px;
+  padding: 0 10px;
+}
+
+p {
+  color: #8892b0;
+  font-size: 1em;
+  margin: 30px 0;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: monospace;
+  color: #64ffda;
+  margin: 0;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 2em;
+  font-family: monospace;
+  color: #64ffda;
+}
+
+.section {
+  margin: 30% 30%;
+}
+
+.section-title {
+  text-align: left;
+}
+
+.section-text {
+  text-align: left;
+}
+
+.introduction {
+  margin-top: 20%;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.profile-picture {
+  width: 300px;
+  height: 300px;
+  margin-left: 30px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact-text {
+  color: #ccd6f6;
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-link {
+  color: #64ffda;
+  background-color: transparent;
+  border: 1px solid #64ffda;
+  border-radius: 4px;
+  padding: 1.25rem 1.75rem;
+  font-size: 0.875em;
+  font-family: monospace;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contact-link:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 0.875em;
+  font-family: monospace;
+}
