@@ -137,14 +137,13 @@ h1 {
   margin-top: 20%;
 }
 
-.wrapper {
-  display: flex;
+.about-me {
+  text-align: center;
 }
 
 .profile-picture {
   width: 300px;
   height: 300px;
-  margin-left: 30px;
 }
 
 .contact {
